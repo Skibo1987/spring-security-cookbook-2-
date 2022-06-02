@@ -20,6 +20,11 @@ public class DemoController {
         return "home";
     }
 
+    @GetMapping("/admin/write/**")
+    public String write() {
+        return "write";
+    }
+
     @GetMapping("/unsecured")
     public String usecuredPage() {
         return "unsecured";
